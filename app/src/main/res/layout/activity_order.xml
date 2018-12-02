@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity"
+    android:orientation="vertical"
+    android:layout_margin="15dp">
+
+    <CheckBox
+        android:textColor="@color/hint"
+        android:background="@drawable/white_border"
+        android:id="@+id/sOne"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Замена шин"
+        android:layout_marginBottom="7dp"
+        android:theme="@style/CheckboxStyle"/>
+
+    <CheckBox
+        android:textColor="@color/hint"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/white_border"
+        android:id="@+id/sTwo"
+        android:theme="@style/CheckboxStyle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Отключение и отладка сигнализации"/>
+
+    <CheckBox
+        android:textColor="@color/hint"
+        android:background="@drawable/white_border"
+        android:id="@+id/sThree"
+        android:theme="@style/CheckboxStyle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Другие сервисы"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/otherServices"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editOtherServices"
+            android:padding="10dp"
+            android:hint="Write other services..."
+            android:textSize="16sp"
+            android:inputType="textMultiLine"
+            android:gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/white_border"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Order"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffff"
+        />
+
+</LinearLayout>
